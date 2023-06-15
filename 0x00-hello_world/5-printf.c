@@ -1,7 +1,6 @@
 #iclude <stdio.h>
 
 /**
- *
  * main - Entry point 
  *
  * Descriotion: A C program that prints with printf function.

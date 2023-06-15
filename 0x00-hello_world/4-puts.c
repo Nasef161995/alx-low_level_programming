@@ -3,10 +3,10 @@
 /**
  * main - Entry point
  *
- * Desreption: A C program that prints with put function 
+ * Desreption: A C program that prints with puts function 
  *
  * Return: Always 0 (success) 
- */
+*/
 
 int main(void)
 {   
