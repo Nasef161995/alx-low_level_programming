@@ -17,7 +17,7 @@ int main(void)
 	}
 	else if (last_digit == 0)
 	{
-	printf("and is 0"),
+	printf("and is 0");
 	}
 	else
 	{
