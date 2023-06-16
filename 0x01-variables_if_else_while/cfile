@@ -1,0 +1,5 @@
+#!/bin/bash
+echo "input file "
+read file  
+echo "#include <stdio.h>">${file}
+
