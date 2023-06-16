@@ -12,7 +12,7 @@ int main(void)
 	n = rand() - RAND_MAX / 2;
 	if (n < 0)
 	{
-	last_digit = -1 * (n % 10);
+	last_digit = 1 * (n % 10);
 	}
 	else
 	{
