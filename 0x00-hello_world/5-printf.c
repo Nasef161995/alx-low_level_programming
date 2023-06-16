@@ -2,7 +2,7 @@
 /**
  * main - This is the entry point of the project
  *
- * Return: always 0
+ * Return: always 0 (Success)
  */
 int main(void)
 {
