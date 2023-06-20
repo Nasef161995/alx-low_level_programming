@@ -13,8 +13,4 @@ c++;
     putchar('\n');
 }
 
-int main() {
-    alphabet();
-    return 0;
-}
 
