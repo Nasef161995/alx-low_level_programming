@@ -1,4 +1,5 @@
 #include <main.h>
+#include <stdio.h>
 /**
  * main - Entry point
  * Return: Always 0 (Success)
@@ -14,5 +15,5 @@ putchar('h');
 putchar('a');
 putchar('r');
 putchar('\n');
-eturn 0;
+return 0;
 }
