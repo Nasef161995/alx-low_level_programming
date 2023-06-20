@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include "main.h"
-#include<man islower>
 /**
  * main - Entry point
  * Return: Always 0 (Success)
