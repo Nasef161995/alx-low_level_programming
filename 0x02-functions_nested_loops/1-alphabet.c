@@ -4,8 +4,7 @@
  * main - Entry point
  * Return: Always 0 (Success)
  */
-
-void alphabet() {
+void print_alphabet();
 char c = 'a';
 while (c <= 'z') {
 putchar(c);
@@ -15,6 +14,6 @@ c++;
 }
 int main(void)
 {
-alphabet();
+print_alphabet(); 
 return (0);
 }
