@@ -12,7 +12,7 @@ int i;
 char numbers[] = "01356789";
 for (i = 0; i < sizeof(numbers) / sizeof(numbers[0]); i++)
 {
-_putchar(numbers[i]);
+_putchar(numbers[i] + '0');
 }
 _putchar('\n');
 }
