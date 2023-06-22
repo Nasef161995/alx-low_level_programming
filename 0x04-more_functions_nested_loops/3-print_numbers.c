@@ -6,7 +6,6 @@
  *
  * Return: returns 0
  */
-#include <stdio.h>
 
 void print_numbers(void)
 {
