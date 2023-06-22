@@ -2,9 +2,9 @@
 /**
  * mul - is function is for multiplie two integers
  *
- * @a: parameter is an intiger
+ * @a: parameter is an integer
  *
- * @a: parameter is an intiger
+ * @b: parameter is an integer
  *
  * Return: returns 0
  */
