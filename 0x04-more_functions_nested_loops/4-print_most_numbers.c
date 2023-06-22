@@ -9,10 +9,10 @@
 void print_most_numbers(void)
 {
 int i;
-char numbers[] = "01356789";
-for (i = 0; i < sizeof(numbers) / sizeof(numbers[0]); i++)
+int a[] = {0,1,3,5,6,7,8,9};
+for (i = 0; i <= 8; i++)
 {
-_putchar(numbers[i] + '0');
+_putchar(a[i] + '0');
 }
 _putchar('\n');
 }
