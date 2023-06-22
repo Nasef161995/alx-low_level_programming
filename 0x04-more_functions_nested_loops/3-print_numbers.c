@@ -6,13 +6,14 @@
  *
  * Return: returns 0
  */
+#include <stdio.h>
 
 void print_numbers(void)
 {
 int i;
-for (i = 0; i <= 9, i++)
+char digits[] = {'0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '\n'};
+for (i = 0; i < sizeof(digits); i++)
 {
-char a = i + '0';
-_putchar('a');
+_putchar(digits[i]);
 }
 }
