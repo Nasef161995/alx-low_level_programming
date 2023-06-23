@@ -2,8 +2,6 @@
 /**
  * main - is function that prints a number and word
  *
- * parameter is an integer
- *
  * Return: returns 0
  */
 int main(void)
