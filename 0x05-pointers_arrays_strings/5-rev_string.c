@@ -14,9 +14,14 @@ while (s[c] != '\0')
 {
 c++;
 }
-for (c -= 1; c >= 0; c--)
+char *star = s;
+char *end = s + c - 1;
+while (star < end)
 {
-_putchar(s[c]);
+char temp = *star;
+*star = *end;
+*end = temp;
+star++;
+end--;
 }
-_putchar('\n');
 }
