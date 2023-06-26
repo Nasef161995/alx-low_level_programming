@@ -14,8 +14,8 @@ while (s[c] != '\0')
 {
 c++;
 }
-char *star = s;
-char *end = s + c - 1;
+char *star = s[0];
+char *end = s[0] + c - 1;
 while (star < end)
 {
 char temp = *star;
