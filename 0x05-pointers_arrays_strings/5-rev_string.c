@@ -7,7 +7,7 @@
  * Return: returns (0).
  */
 
-void rev_string(char *s);
+void rev_string(char *s)
 {
 int c = 0;
 while (s[c] != '\0')
