@@ -13,7 +13,7 @@ int i;
 
 srand(time(NULL));
 
-for (i = 0; i < PASSWORD_LENGTH; i++
+for (i = 0; i < PASSWORD_LENGTH; i++)
 {
 password[i] = charset[rand() % charset_size];
 }
