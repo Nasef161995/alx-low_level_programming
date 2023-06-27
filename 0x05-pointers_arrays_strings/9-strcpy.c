@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * *_strcpy - function that  copies the string 
+ * *_strcpy - function that  copies the string
  *
  * @dest: parameter is a charecter
  *
