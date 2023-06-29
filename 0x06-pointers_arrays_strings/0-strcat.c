@@ -22,3 +22,4 @@ b++;
 a++;
 }
 return (dest);
+}
