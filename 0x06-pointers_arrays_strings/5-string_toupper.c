@@ -2,18 +2,20 @@
 /**
  * string_toupper - function that changes a string to uppercase
  *
- * @s: parameter is character
+ * @str: parameter is character
  *
- * Return: returns (s).
+ * Return: returns (str).
  */
 
-char *string_toupper(char *)
+char *string_toupper(char *str)
 {
-int i = 0;
-for (i; s[i] != '\0'; i++)
+int i;
+for (i = 0; str[i] != '\0'; i++)
 {
-if (s[i] >= 'a' && s[i] <= 'z')
-s[i] = s[i] - 32;
+if (str[i] >= 'a' && str[i] <= 'z')
+{
+str[i] = str[i] - 'a' + 'A';
 }
-return (s);
+}
+return (str);
 }
