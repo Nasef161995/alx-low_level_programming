@@ -25,7 +25,7 @@ break;
 }
 while (b != n)
 {
-dest[b] = '\0';
+dest[b++] == '\0';
 }
 return (dest);
 }
