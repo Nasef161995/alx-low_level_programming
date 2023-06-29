@@ -8,7 +8,7 @@
  *
  * @n: parameter is string
  *
- * Return: returns (dest).
+ * Return: returns (0).
  */
 
 char *_strncpy(char *dest, char *src, int n)
@@ -21,9 +21,7 @@ dest[b] = src[a];
 b++;
 a++;
 if (src[a] == '\0')
-{
 break;
-}
 }
 while (b != n)
 {
