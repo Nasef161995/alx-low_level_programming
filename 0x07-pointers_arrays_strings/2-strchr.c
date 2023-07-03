@@ -6,7 +6,7 @@
  *
  * @c: parameter is character
  *
- * Return: returns (s).
+ * Return: pointer of character c in string
  */
 
 char *_strchr(char *s, char c)
