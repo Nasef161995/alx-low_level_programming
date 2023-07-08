@@ -11,6 +11,12 @@
  */
 int main(int argc, char *argv[])
 {
-_putchar(*argv);
+char *arg = argv[0];
+while (*arg != '\0')
+{
+_putchar(*arg);
+arg++;
+}
+_putchar('\0');
 return (0);
 }
