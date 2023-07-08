@@ -9,14 +9,8 @@
  *
  * Return: 0 - success.
  */
-int main(int argc, char *argv[])
+int main(int argc __attribute__((unused)), char **argv)
 {
-char *arg = argv[0];
-while (*arg != '\0')
-{
-_putchar(*arg);
-arg++;
-}
-_putchar('\0');
+printf("%s\n", *argv);
 return (0);
 }
