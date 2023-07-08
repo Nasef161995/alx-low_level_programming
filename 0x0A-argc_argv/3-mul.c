@@ -22,6 +22,11 @@ mult = mult *atoi(argv[i]);
 }
 printf("%d\n", mult);
 }
+else if (argc > 3)
+{
+printf("Error\n");
+return (1);
+}
 else
 {
 printf("Error\n");
