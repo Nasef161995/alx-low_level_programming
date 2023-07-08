@@ -10,7 +10,7 @@
  * Return: 0 - success.
  */
 
-int main(int argc, char *argv[] __attribute__((unused)))
+int main(int argc, char *argv[])
 {
 if (argc > 1)
 {
