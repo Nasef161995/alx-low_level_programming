@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- * main - multiplies two numbers
+ * main - adds positive numbers
  *
  * @argc: number of command line arguments.
  *
@@ -12,20 +12,24 @@
 
 int main(int argc, char *argv[])
 {
-if (argc != 3)
+if (argc > 1)
 {
-printf("Error\n");
-return (1);
+int i;
+int add = 0;
+for (i = 1; i < argc; i++)
+{
+add = add + atoi(argv[i]);
+}
+printf("%d\n", add);
+}
+else if (argc == 0)
+{
+printf("0\n");
 }
 else
 {
-int i;
-int mult = 1;
-for (i = 1; i < argc; i++)
-{
-mult = mult *atoi(argv[i]);
-}
-printf("%d\n", mult);
+printf("Error\n");
+return (1);
 }
 return (0);
 }
