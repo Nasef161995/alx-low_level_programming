@@ -23,4 +23,5 @@ else if (p == Null)
 return (Null);
 else
 return (p);
+free(p);
 }
