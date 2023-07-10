@@ -11,6 +11,8 @@
 
 char *_strdup(char *str)
 {
+if (str == NULL)
+return (NULL);
 unsigned int len = 0;
 char *newstr;
 while (str[len] != '\0')
@@ -22,8 +24,6 @@ for (unsigned int i = 0; i <= len; i++)
 {
 newstr[i] = str[i];
 }
-if (str == NULL)
-return (NULL);
 return (newstr);
 free(newstr);
 }
