@@ -36,5 +36,7 @@ for (y = 0; y <= j; y++)
 {
 newstr[i + y] = s2[y];
 }
+newstr(x + y) = '\0';
 return (newstr);
+free(newstr);
 }
