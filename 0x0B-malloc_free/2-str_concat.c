@@ -27,7 +27,7 @@ for (j = 0; s2[j] != '\0'; j++)
 newstr = (char *)malloc(sizeof(char) * (i + 1 + j + 1));
 if (newstr == NULL)
 	return (NULL);
-unsigned int x, y;
+int x, y;
 for (x = 0; x <= i; x++)
 {
 newstr[x] = s1[x];
