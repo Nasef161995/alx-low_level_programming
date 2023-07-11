@@ -18,10 +18,10 @@ char *newstr;
 unsigned int len1 = strlen(s1);
 unsigned int len2 = strlen(s2);
 if (s1 == NULL)
-return (NULL);
+s1 = "";
 if (s2 == NULL)
-return (NULL);
-newstr = (char *)malloc(sizeof(char) * (len1 + len2 + 2));
+s2 = "";
+newstr = (char *)malloc(sizeof(char) * (len1 + len2 + 1));
 if (newstr == NULL)
 return (NULL);
 strcat(newstr, s1);
