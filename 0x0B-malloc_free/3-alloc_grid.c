@@ -11,26 +11,33 @@
  *
  * Return: pointer to a 2 dimentional array
  */
+
 int **alloc_grid(int width, int height)
 {
-if (width <= 0 || height <= 0)
-return (NULL);
-int **grid = (int **) malloc(height * sizeof(int *));
-if (grid == NULL)
-return (NULL);
-unsigned int i, j;
-for (int i = 0; i < height; i++)
-{
-grid[i] = (int *) calloc(width, sizeof(int));
-if (grid[i] == NULL)
-{
-for (int j = 0; j < i; j++)
-{
-free(grid[j]);
-}
-free(grid);
-return (NULL);
-}
-}
+	int **grid;
+	unsigned int i, j;
+
+	if (width < 1 || height < 1)
+	return (NULL);
+	grid = malloc(height * sizeof(int *));
+	if (grid == NULL)
+	{
+	free(grid);
+	return (NULL);
+	}
+	for (i = 0; i < height; i++)
+	{
+	grid[i] = malloc(width * sizeof(int));
+	if (grid[i] == NULL)
+	{
+	for (i--; i >= 0; i--)
+	free(grid[i]);
+	free(grid);
+	return (NULL);
+	}
+	}
+	for (i = 0; i < height; i++)
+	for (j = 0; j < width; j++)
+	grid[i][j] = 0;
 	return (grid);
 }
