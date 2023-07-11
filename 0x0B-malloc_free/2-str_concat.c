@@ -20,23 +20,25 @@ if (s1 == NULL)
 	return (NULL);
 if (s2 == NULL)
 	return (NULL);
-for (i = 0; s1[i] != '\0'; i++)
-	;
-for (j = 0; s2[j] != '\0'; j++)
-	;
-newstr = (char *)malloc(sizeof(char) * (i + 1 + j + 1));
+int len1 = 0;
+while (s1[len1] != '\0')
+	len1++;
+int len2 = 0;
+while (s2[len1] != '\0')
+	len2++;
+newstr = (char *)malloc(sizeof(char) * (len1 + len2 + 1));
 if (newstr == NULL)
 	return (NULL);
-int x, y;
-for (x = 0; x <= i; x++)
+
+for (i = 0;  <= len1; i++)
 {
-newstr[x] = s1[x];
+newstr[i] = s1[i];
 }
-for (y = 0; y <= j; y++)
+for (j = 0; j <= len2; j++)
 {
-newstr[i + y] = s2[y];
+newstr[i + j] = s2[j];
 }
-newstr(x + y) = '\0';
+newstr(i + j) = '\0';
 return (newstr);
 free(newstr);
 }
