@@ -1,28 +1,49 @@
-#include "main.h"
-#include <stdio.h>
 #include <stdlib.h>
+#include "main.h"
 
 /**
- * _calloc - function that allocates memory for an array
+ * _memset - fill a block of memory with a specific value
  *
- * @nmemb: parameter is integer
+ * @s: starting address of memory to be filled
  *
- * @size: parameter is integer
+ * @b: the desired value
  *
- * Return: returns pointer to  allocated memory.
+ * @n: number of bytes to be changed
+ *
+ * Return: changed array with new value for n bytes
  */
 
+char *_memset(char *s, char b, unsigned int n)
+{
+	unsigned int i;
+
+	i = 0;
+	while (i < n)
+	{
+	s[i] = b;
+	i++;
+	}
+	return (s);
+}
+
+/**
+ * _calloc -  function that allocates memory for an array,
+ *
+ * @nmemb: number of elements in array
+ *
+ * @size: size of each element
+ *
+ * Return: pointer to allocated memory
+ */
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-unsigned int i;
-void *ptr;
-if (nmemb == 0 || size == 0)
-return (NULL);
-ptr = malloc(nmemb * size);
-if (ptr == NULL)
-return (NULL);
-for (i = 0; i < (nmemb * size); i++)
-ptr[i] = 0;
-return (ptr);
-free(ptr);
+	char *call;
+
+	if (nmemb == 0 || size == 0)
+	return (NULL);
+	call = malloc(size * nmemb);
+	if (call == NULL)
+	return (NULL);
+	_memset(call, 0, nmemb * size);
+	return (call);
 }
