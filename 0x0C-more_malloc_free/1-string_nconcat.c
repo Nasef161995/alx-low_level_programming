@@ -48,7 +48,7 @@ if (nstr == NULL)
 	}
 
 	j = 0;
-	while (i < len3)
+	while (j < len3)
 	{
 	nstr[i] = s2[j];
 	i++;
