@@ -48,12 +48,12 @@ if (nstr == NULL)
 	}
 
 	j = 0;
-	while (i < size)
+	while (i < len3)
 	{
 	nstr[i] = s2[j];
 	i++;
 	j++;
 	}
-	free(nstr);
-	return (nstr);
+return (nstr);
+free(nstr);
 }
