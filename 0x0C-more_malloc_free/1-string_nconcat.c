@@ -54,6 +54,7 @@ if (nstr == NULL)
 	i++;
 	j++;
 	}
+nstr[i] = '\0';
 return (nstr);
 free(nstr);
 }
