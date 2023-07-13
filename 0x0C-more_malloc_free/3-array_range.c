@@ -17,18 +17,18 @@
 int *array_range(int min, int max)
 {
 unsigned int i;
-int *ptr;
+int *arr;
 
 if (min > max)
 return (NULL);
 
-ptr = malloc(sizeof(int) * (max - min + 1));
-if (ptr == NULL)
+arr = malloc(sizeof(int) * (max - min + 1));
+if (arr == NULL)
 return (NULL);
 
 for (i = 0; i <= (max - min); i++)
-ptr[i] = min + i;
+arr[i] = min + i;
 
-return (ptr);
-
+return (arr);
+free(arr);
 }
