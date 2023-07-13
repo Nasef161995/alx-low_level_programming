@@ -22,11 +22,11 @@ int *ptr;
 if (min > max)
 return (NULL);
 
-ptr = malloc(sizeof(int) * (max + 1));
+ptr = malloc(sizeof(int) * (max - min + 1));
 if (ptr == NULL)
 return (NULL);
 
-for (i = 0; i < (max + 1); i++)
+for (i = 0; i <= (max - min); i++)
 ptr[i] = min + i;
 
 return (ptr);
