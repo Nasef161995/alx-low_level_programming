@@ -1,5 +1,8 @@
 #ifndef DOG_H
 #define DOG_H
+#include <stdio.h>
+#include <stdlib.h>
+
 /**
  * struct dog - is a dog structure
  * @name: First member is name
