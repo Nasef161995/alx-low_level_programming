@@ -32,6 +32,6 @@ printf("%s", str);
 if (i != (n - 1) && separator != NULL)
 printf("%s", separator);
 }
-va_end(strings);
 printf("\n");
+va_end(strings);
 }
