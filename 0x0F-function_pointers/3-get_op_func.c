@@ -2,8 +2,6 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
-
-
 /**
  * get_op_func - function that selects the correct function operator
  *
@@ -11,7 +9,6 @@
  *
  * Return: returns pointer to the function
  */
-
 int (*get_op_func(char *s))(int, int)
 {
 op_t ops[] = {
@@ -23,14 +20,11 @@ op_t ops[] = {
 	{ NULL, NULL }
 	};
 int i = 0;
-
-
 while (i < 5)
 {
 if (strcmp(s, ops[i].op) == NULL)
 return (ops[i].f);
 i++;
 }
-
 return (0);
 }
