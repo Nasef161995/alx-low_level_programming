@@ -11,6 +11,8 @@
  *
  * @separator: string to be printed between numbers
  *
+ * @...: A variable number of strings
+ *
  * Return: returns void
  */
 
