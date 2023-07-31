@@ -6,7 +6,7 @@
 /**
  * free_listint2 - function frees a list.
  *
- * @head: pointer to node
+ * @head: pointer to first node
  *
  * Return: returns void
  */
