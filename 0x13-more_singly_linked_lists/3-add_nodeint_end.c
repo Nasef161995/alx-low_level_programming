@@ -21,6 +21,11 @@ if (ptr == NULL)
 return (NULL);
 ptr->n = n;
 ptr->next = NULL;
+if (*head == NULL)
+{
+*head = ptr;
+return (ptr);
+}
 current = *head;
 while (current != NULL)
 {
