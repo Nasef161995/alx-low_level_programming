@@ -12,11 +12,11 @@
 
 void free_listint(listint_t *head)
 {
-if (head)
+listint_t *current;
+while (head != NULL)
 {
-free_listint(head->next);
-if (head->str)
-free(head->str);
-free(head);
+current = head;
+head = head->next;
+free(current);
 }
 }
