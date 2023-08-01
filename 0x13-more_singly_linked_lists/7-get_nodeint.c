@@ -13,21 +13,17 @@
  * Return: returns n of the node
  */
 
-
 listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
 {
 listint_t *ptr;
 unsigned int i = 0;
 ptr = head;
-if (ptr)
-{
-while (i != index)
+while (ptr != NULL && i < index)
 {
 ptr = ptr->next;
 i++;
 }
-return (ptr->n);
-}
-else
+if (i == index)
+return (ptr);
 return (NULL);
 }
