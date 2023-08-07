@@ -10,7 +10,7 @@ size_t _strlen(char *p)
 {
 	size_t x;
 
-	for (i = 0; p[x]; x++)
+	for (x = 0; p[x]; x++)
 	;
 	return (x);
 }
