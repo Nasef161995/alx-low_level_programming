@@ -33,13 +33,12 @@ char *create_buffer(char *filename)
  * _close - function that Closes file descriptors.
  * @fd: The file descriptor
  *
- *  Return: returns void
+ * Return: returns void
  */
 void _close(int fd)
 {
-	int ch;
-
-	ch = close(fd);
+int ch;
+ch = close(fd);
 
 	if (ch == -1)
 	{
@@ -57,6 +56,7 @@ void _close(int fd)
 int main(int argc, char *argv[])
 {
 	int filefrom, fileto, r, w;
+
 	char *buffer;
 
 	if (argc != 3)
@@ -94,6 +94,6 @@ int main(int argc, char *argv[])
 	} while (r > 0);
 	free(buffer);
 	_close(filefrom);
-	_close(to);
+	_close(fileto);
 	return (0);
 }
