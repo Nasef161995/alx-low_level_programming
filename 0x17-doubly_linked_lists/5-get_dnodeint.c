@@ -24,7 +24,7 @@ temp = temp->next;
 num_node++;
 }
 
-if (index < num_node)
+if (index <= num_node)
 {
 temp = head;
 while (i != index)
