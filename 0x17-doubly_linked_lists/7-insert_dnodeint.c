@@ -31,9 +31,9 @@ total++;
 }
 if (idx == 0)
 add_dnodeint(h, n);
-if (idx == total)
+else if (idx == total)
 add_dnodeint_end(h, n);
-if (idx > total)
+else if (idx > total)
 return (NULL);
 else
 {
@@ -43,10 +43,10 @@ while (i != idx - 1)
 temp = temp->next;
 i++;
 }
-temp->next->prev = new;
+new->prev = temp;
 new->next = temp->next;
 temp->next = new;
-new->prev = temp;
+new->next->prev = new;
 }
 return (new);
 }
