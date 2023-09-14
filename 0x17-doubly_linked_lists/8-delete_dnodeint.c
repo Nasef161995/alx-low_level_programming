@@ -19,6 +19,8 @@ while (i < index)
 temp = temp->next;
 i++;
 }
+if (temp == NULL)
+return (-1);
 if (index == 0)
 {
 if ((*head)->next)
@@ -31,12 +33,10 @@ else
 *head = (*head)->next;
 }
 }
-
 else if (temp->next == NULL)
 {
 temp->prev->next = NULL;
 }
-
 else
 {
 temp->prev->next = temp->next;
