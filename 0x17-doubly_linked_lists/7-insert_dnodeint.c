@@ -46,5 +46,5 @@ new->next->prev = new;
 return (new);
 }
 else
-return (NULL);
+return (new);
 }
