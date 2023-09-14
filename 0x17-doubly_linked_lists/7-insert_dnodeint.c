@@ -25,6 +25,8 @@ new->prev = NULL;
 return (new);
 }
 temp = *h;
+if (idx == 0)
+add_dnodeint(h, n);
 if (temp != NULL)
 {
 while (i != idx - 1)
