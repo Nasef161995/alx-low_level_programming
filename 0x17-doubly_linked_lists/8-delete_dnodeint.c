@@ -18,9 +18,9 @@ while (i < index)
 {
 temp = temp->next;
 i++;
-}
 if (temp == NULL)
 return (-1);
+}
 if (index == 0)
 {
 if ((*head)->next)
