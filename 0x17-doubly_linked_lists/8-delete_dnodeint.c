@@ -9,8 +9,7 @@ int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 {
 dlistint_t *temp;
 unsigned int i = 0;
-if (head == NULL)
-return (-1);
+
 if (*head != NULL)
 {
 
@@ -33,7 +32,7 @@ else
 }
 }
 
-else if (temp->next == NULL && index > 0)
+else if (temp->next == NULL)
 {
 temp->prev->next = NULL;
 }
