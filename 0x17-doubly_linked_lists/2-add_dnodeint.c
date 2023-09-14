@@ -16,15 +16,11 @@ dlistint_t *new;
 new = malloc(sizeof(dlistint_t));
 new->n = n;
 if (new == NULL)
-{
-dprintf(2, "Error: Can't malloc\n");
-return (EXIT_FAILURE);
-}
+return (NULL);
 if (*head == NULL)
 {
 *head = new;
 new->next = new->prev = NULL;
-return (new);
 }
 else
 {
@@ -32,6 +28,6 @@ new->prev = NULL;
 (*head)->prev = new;
 new->next = *head;
 *head = new;
-return (new);
 }
+return (new);
 }
