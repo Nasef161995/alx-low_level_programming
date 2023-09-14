@@ -14,11 +14,14 @@ new = malloc(sizeof(dlistint_t));
 if (new == NULL)
 return (NULL);
 new->n = n;
-if (*h == NULL)
+if (*h == NULL && idx > 0)
+return (NULL);
+else if (*h == NULL && idx == 0 )
 {
 *h = new;
 new->prev = NULL;
 new->next = NULL;
+return (new);
 }
 temp = *h;
 while (temp->next)
