@@ -31,6 +31,11 @@ else
 }
 }
 
+else if (temp->next == NULL && index > 0)
+{
+temp->prev->next = NULL;
+}
+
 else
 {
 temp->prev->next = temp->next;
