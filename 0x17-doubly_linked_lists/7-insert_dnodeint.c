@@ -30,7 +30,7 @@ if (idx == 0)
 add_dnodeint(h, n);
 if (idx == total + 1)
 add_dnodeint_end(h, n);
-else
+if (idx <= total)
 {
 temp = *h;
 while (i < idx - 1)
@@ -42,6 +42,8 @@ new->prev = temp;
 new->next = temp->next;
 temp->next = new;
 new->next->prev = new;
-}
 return (new);
+}
+else
+return (NULL);
 }
