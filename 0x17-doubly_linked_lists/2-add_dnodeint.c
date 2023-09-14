@@ -16,7 +16,10 @@ dlistint_t *new;
 new = malloc(sizeof(dlistint_t));
 new->n = n;
 if (new == NULL)
-return (NULL);
+{
+dprintf(2, "Error: Can't malloc\n");
+return (EXIT_FAILURE);
+}
 if (*head == NULL)
 {
 *head = new;
