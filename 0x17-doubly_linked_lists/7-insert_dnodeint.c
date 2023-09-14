@@ -20,7 +20,6 @@ else if (*h == NULL && idx == 0)
 {
 *h = new;
 new->prev = NULL;
-new->next = NULL;
 return (new);
 }
 temp = *h;
@@ -30,9 +29,9 @@ temp = temp->next;
 total++;
 }
 if (idx == 0)
-return(add_dnodeint(h, n));
+return (add_dnodeint(h, n));
 if (idx == total + 1)
-return(add_dnodeint_end(h, n));
+return (add_dnodeint_end(h, n));
 if (idx <= total)
 {
 temp = *h;
