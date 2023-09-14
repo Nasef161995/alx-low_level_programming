@@ -19,4 +19,5 @@ free(temp->prev);
 temp = temp->next;
 }
 free(temp);
+free(head);
 }
