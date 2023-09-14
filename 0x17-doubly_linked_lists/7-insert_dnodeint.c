@@ -16,7 +16,7 @@ return (NULL);
 new->n = n;
 if (*h == NULL && idx > 0)
 return (NULL);
-else if (*h == NULL && idx == 0 )
+else if (*h == NULL && idx == 0)
 {
 *h = new;
 new->prev = NULL;
@@ -30,16 +30,16 @@ temp = temp->next;
 total++;
 }
 if (idx == 0)
-add_dnodeint(h, n);
+return(add_dnodeint(h, n));
 if (idx == total + 1)
-add_dnodeint_end(h, n);
+return(add_dnodeint_end(h, n));
 if (idx <= total)
 {
 temp = *h;
 while (i < idx - 1)
 {
-temp = temp->next;
-i++;
+    temp = temp->next;
+    i++;
 }
 new->prev = temp;
 new->next = temp->next;
