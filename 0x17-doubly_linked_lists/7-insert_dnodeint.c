@@ -38,8 +38,8 @@ if (idx <= total)
 temp = *h;
 while (i < idx - 1)
 {
-    temp = temp->next;
-    i++;
+temp = temp->next;
+i++;
 }
 new->prev = temp;
 new->next = temp->next;
