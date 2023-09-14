@@ -1,4 +1,3 @@
-
 #include "lists.h"
 /**
  * insert_dnodeint_at_index - function that add node
@@ -19,7 +18,7 @@ if (*h == NULL)
 {
 *h = new;
 new->prev = NULL;
-return (new);
+new->next = NULL;
 }
 temp = *h;
 while (temp->next)
@@ -32,8 +31,6 @@ add_dnodeint(h, n);
 if (idx == total + 1)
 add_dnodeint_end(h, n);
 temp = *h;
-if (idx <= total)
-{
 while (i < idx - 1)
 {
 temp = temp->next;
@@ -44,7 +41,4 @@ new->next = temp->next;
 temp->next = new;
 new->next->prev = new;
 return (new);
-}
-else
-return (NULL);
 }
