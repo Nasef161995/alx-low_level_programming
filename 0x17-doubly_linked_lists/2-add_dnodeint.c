@@ -24,9 +24,9 @@ new->next = new->prev = NULL;
 }
 else
 {
-new->prev = NULL;
 (*head)->prev = new;
 new->next = *head;
+new->prev = NULL;
 *head = new;
 }
 return (new);
