@@ -21,7 +21,6 @@ if (*h == NULL && idx == 0)
 {
 *h = new;
 new->prev = NULL;
-new->next = NULL;
 return (new);
 }
 if (idx == 0)
