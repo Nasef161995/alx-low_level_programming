@@ -48,7 +48,7 @@ return (a / b);
  * @b: parameter is integer
  * Return: mod
  */
-int mod(a, b)
+int mod(int a, int b)
 {
 return (a % b);
 }
