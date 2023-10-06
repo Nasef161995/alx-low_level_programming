@@ -14,6 +14,11 @@ index = key_index((unsigned char *)key, ht->size);
 current = ht->array[index];
 if (ht == NULL)
 return (NULL);
+if (key == NULL)
+{
+return (NULL);
+}
+
 if (current == NULL)
 return (NULL);
 
