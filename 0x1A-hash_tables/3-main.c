@@ -4,16 +4,15 @@
 #include "hash_tables.h"
 
 /**
- * main - check the code
+ * main - check the code for Holberton School students.
  *
  * Return: Always EXIT_SUCCESS.
  */
 int main(void)
 {
-    hash_table_t *ht;
+    int ret;
 
-    ht = hash_table_create(1024);
-    hash_table_set(ht, "betty", "cool");
-    
+    ret = hash_table_set(NULL, "Holberton", "is cool");
+    printf("%d\n", ret);
     return (EXIT_SUCCESS);
 }
