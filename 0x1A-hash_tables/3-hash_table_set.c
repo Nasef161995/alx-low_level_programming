@@ -12,7 +12,7 @@ hash_node_t *new;
 hash_node_t *current;
 unsigned long int index;
 if (ht == NULL)
-return;
+return (0);
 new = malloc(sizeof(hash_node_t));
 new->key = malloc(strlen(key) + 1);
 new->value = malloc(strlen(value) + 1);
