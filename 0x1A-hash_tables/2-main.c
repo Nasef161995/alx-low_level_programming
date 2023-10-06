@@ -14,7 +14,7 @@ int main(void)
     unsigned long int hash_table_array_size;
 
     hash_table_array_size = 1024;
-    s = "cisfun";
+    s = "betty";
     printf("%lu\n", hash_djb2((unsigned char *)s));
     printf("%lu\n", key_index((unsigned char *)s, hash_table_array_size));
     s = "Don't forget to tweet today";
