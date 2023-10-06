@@ -1,12 +1,10 @@
-#include <stdlib.h>
-#include <string.h>
-#include <stdio.h>
+
 #include "hash_tables.h"
 
 /**
- * hash_table_create - ....
- * @size: ...
- * Return: ....
+ * hash_table_create - function create hash table
+ * @size: size of array
+ * Return: hash rable
  */
 
 hash_table_t *hash_table_create(unsigned long int size)
@@ -27,7 +25,8 @@ free(table);
 return (NULL);
 }
 
-for (i = 0; i < table->size; i++)
+for (i = 0; i < size; i++)
 table->array[i] = NULL;
+
 return (table);
 }
