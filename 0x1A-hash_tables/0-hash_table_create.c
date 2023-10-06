@@ -21,7 +21,6 @@ table->array = malloc(table->size * sizeof(hash_node_t *));
 
 if (table->array == NULL)
 {
-free(table);
 return (NULL);
 }
 
