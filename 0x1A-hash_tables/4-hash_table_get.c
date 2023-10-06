@@ -12,6 +12,8 @@ unsigned long int index;
 
 index = key_index((unsigned char *)key, ht->size);
 current = ht->array[index];
+if (ht == NULL)
+return (NULL);
 if (current == NULL)
 return (NULL);
 
@@ -22,7 +24,6 @@ if (strcmp(current->key, key) == 0)
 return (current->value);
 }
 current = current->next;
-
 }
 return (NULL);
 }
