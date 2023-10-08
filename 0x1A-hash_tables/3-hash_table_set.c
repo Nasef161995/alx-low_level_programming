@@ -33,6 +33,9 @@ else
 if (strcmp(current->key, key) == 0)
 {
 strcpy(ht->array[index]->value, value);
+free(new->key);
+free(new->value);
+free(new);
 return (1);
 }
 else
